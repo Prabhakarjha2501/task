@@ -12,6 +12,9 @@ const axiosInstance = axios.create({
     }
 })
 
+// api is not working due to this reason I have used json file but we will try from side if api will work
+
+
 // const addUser = async (randomId) => {
 //   const user=  axios.get(`https://swapi.dev/api/people/${randomId}`);
 //   return user;
