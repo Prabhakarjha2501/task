@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import usersData from '../user.json';
+//import {  addUser } from '../api/api.js';
 
 const RandomUserTable = () => {
     const [users, setUsers] = useState([]);
 
-    const addUser = () => {
+    const addUser = async() => {
         try {
             const randomIndex = Math.floor(Math.random() * usersData.length);
+            // here we will use axios  like this type
+              // const randomUser = await addUser(randomIndex);
             const randomUser = usersData[randomIndex];
             setUsers([...users, randomUser]);
         } catch (error) {
