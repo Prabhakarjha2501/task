@@ -11,7 +11,8 @@ const RandomUserTable = () => {
             const randomIndex = Math.floor(Math.random() * usersData.length);
             // here we will use axios  like this type
               // const usersData = await addUser(randomIndex);
-            const randomUser = usersData[randomIndex];
+           //here I have used json file because api is not working 
+              const randomUser = usersData[randomIndex];
             setUsers([...users, randomUser]);
         } catch (error) {
             console.log(error);
