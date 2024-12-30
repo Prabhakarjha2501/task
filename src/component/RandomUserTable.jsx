@@ -10,7 +10,7 @@ const RandomUserTable = () => {
         try {
             const randomIndex = Math.floor(Math.random() * usersData.length);
             // here we will use axios  like this type
-              // const randomUser = await addUser(randomIndex);
+              // const usersData = await addUser(randomIndex);
             const randomUser = usersData[randomIndex];
             setUsers([...users, randomUser]);
         } catch (error) {
